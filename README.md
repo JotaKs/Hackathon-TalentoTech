@@ -27,5 +27,6 @@ Juan Sebastian Tobar Noguera - Pasto
 Wilson Fernando Andrade Madroñero - Pasto
 
 ## Repositorios:
-[Frontend ]((https://github.com/JotaKs/Hackathon-TalentoTech))
+[Frontend ](https://github.com/JotaKs/Hackathon-TalentoTech)
+
 [Backend ](https://github.com/Juanse1108/premu_be)
