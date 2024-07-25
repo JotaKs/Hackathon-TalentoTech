@@ -41,23 +41,54 @@
         }
 
         body[data-sidebar=dark] #sidebar-menu ul li a:hover {
-            color: black;
+            background-color: #000 !important; 
+            color: #fff !important; 
         }
 
         body[data-sidebar=dark] #sidebar-menu ul li a:hover i {
-            color: black;
+        
+            color: #fff !important; 
         }
 
         body[data-sidebar=dark] #sidebar-menu ul li ul.sub-menu li a:hover {
-            color: black !important;
+            
+            color: #fff !important; 
         }
 
-        body[data-sidebar=dark] .mm-active .active:hover {
-            color: black; /* Este color puede ser el mismo o diferente al del estado activo */
+        body[data-sidebar="dark"] .mm-active .active {
+            color: #fff !important; 
+        }
+        body[data-sidebar="dark"] .mm-active .active i {
+            
+            color: #fff !important; 
         }
 
+        body[data-sidebar="dark"] .mm-active:hover .active {
+          
+            color: #fff !important; 
+        }
+        
+        body[data-sidebar="dark"] .mm-active:hover .active i {
+            
+            color: #fff !important; 
+        }
+        body[data-sidebar=dark].vertical-collpsed .vertical-menu #sidebar-menu>ul ul {
+            background-color: white;
+        }
+
+        body[data-sidebar=dark].vertical-collpsed .vertical-menu #sidebar-menu ul li.mm-active .active i {
+            color: #fff !important;
+        }
         body[data-sidebar=dark].vertical-collpsed .vertical-menu #sidebar-menu ul li.mm-active .active {
-            color: black !important;
+            color: #fff !important;
+        }
+        
+        body[data-sidebar=dark].vertical-collpsed .vertical-menu #sidebar-menu>ul>li:hover>a {
+            background-color: #f5aeac;
+            color: #fff !important;
+        }
+        body[data-sidebar=dark].vertical-collpsed {
+            min-height: auto !important;
         }
     </style>
 </head>
@@ -72,20 +103,10 @@
                 <div class="d-flex">
                     <!-- LOGO -->
                     <div class="navbar-brand-box">
-                        <a href="index.html" class="logo logo-dark">
-                            <span class="logo-sm">
-                                <img src="assets\images\logo.svg" alt="" height="22">
-                            </span>
-                            <span class="logo-lg">
-                                <img src="assets\images\logo-horizontal.png" alt="" height="17">
-                            </span>
-                        </a>
-
-                        <a href="index.html" class="logo logo-light">
-                            
-                            <span class="logo-lg">
-                                <img src="assets\images\logo-horizontal.png" alt="" height="80">
-                            </span>
+                        <a href="dashboard.html" class="logo logo-light">
+                            <h1 id="logo-text" class="text-white font-weight-semibold mt-3 hero-title">
+                                P
+                              </h1>
                         </a>
                     </div>
 
@@ -130,9 +151,8 @@
                     <div class="dropdown d-inline-block">
                         <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="rounded-circle header-profile-user" src="assets\images\users\avatar-1.jpg"
+                            <img class="rounded-circle header-profile-user" src="assets\images\users\avatar-1.png"
                                 alt="Header Avatar">
-                            <span class="d-none d-xl-inline-block ml-1">Henry</span>
                             <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
                         </button>
                         <div class="dropdown-menu dropdown-menu-right">
@@ -218,12 +238,12 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-flex align-items-center justify-content-between">
-                                <h4 class="mb-0 font-size-18">Crypto</h4>
+                                <h4 class="mb-0 font-size-18">Dashboard</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboards</a></li>
-                                        <li class="breadcrumb-item active">Crypto</li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Inicio</a></li>
+                                        <li class="breadcrumb-item active">Menu</li>
                                     </ol>
                                 </div>
 
@@ -233,196 +253,33 @@
                     <!-- end page title -->
 
                     <div class="row">
-                        <div class="col-xl-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="float-right dropdown ml-2">
-                                        <a class="text-muted dropdown-toggle" href="#" role="button"
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="mdi mdi-dots-horizontal font-size-18"></i>
-                                        </a>
-
-                                        <div class="dropdown-menu dropdown-menu-right">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="mb-4 mr-3">
-                                            <i class="mdi mdi-account-circle text-primary h1"></i>
-                                        </div>
-
-                                        <div>
-                                            <h5>Henry Wells</h5>
-                                            <p class="text-muted mb-1">henrywells@abc.com</p>
-                                            <p class="text-muted mb-0">Id no: #SK0234</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card-body border-top">
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div>
-                                                <p class="font-weight-medium mb-2">Balance :</p>
-                                                <h4>$ 6134.39</h4>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="mt-4 mt-sm-0">
-                                                <p class="font-weight-medium mb-2">Coin :</p>
-                                                <div class="d-inline-flex align-items-center mt-1">
-
-                                                    <a href="javascript: void(0);" class="m-1" data-toggle="tooltip"
-                                                        data-placement="top" title="Bitcoin">
-                                                        <div class="avatar-xs">
-                                                            <span
-                                                                class="avatar-title rounded-circle bg-soft-warning text-warning font-size-18">
-                                                                <i class="mdi mdi-bitcoin"></i>
-                                                            </span>
-                                                        </div>
-                                                    </a>
-                                                    <a href="javascript: void(0);" class="m-1" data-toggle="tooltip"
-                                                        data-placement="top" title="Ethereum">
-                                                        <div class="avatar-xs">
-                                                            <span
-                                                                class="avatar-title rounded-circle bg-soft-primary text-primary font-size-18">
-                                                                <i class="mdi mdi-ethereum"></i>
-                                                            </span>
-                                                        </div>
-                                                    </a>
-                                                    <a href="javascript: void(0);" class="m-1" data-toggle="tooltip"
-                                                        data-placement="top" title="Litecoin">
-                                                        <div class="avatar-xs">
-                                                            <span
-                                                                class="avatar-title rounded-circle bg-soft-info text-info font-size-18">
-                                                                <i class="mdi mdi-litecoin"></i>
-                                                            </span>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card-footer bg-transparent border-top">
-                                    <div class="text-center">
-                                        <a href="#" class="btn btn-outline-light mr-2 w-md">Deposit</a>
-                                        <a href="#" class="btn btn-primary mr-2 w-md">Buy / Sell</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-8">
+                        
+                        <div class="col-xl-12">
                             <div class="card">
                                 <div>
                                     <div class="row">
                                         <div class="col-lg-9 col-sm-8">
                                             <div class="p-4">
-                                                <h5 class="text-primary">Welcome Back !</h5>
-                                                <p>Skote Crypto Dashboard</p>
+                                                <h5 class="text-primary" style="color: #f5aeac !important">Bienvenido denuevo!</h5>
+                                                <p>Mensaje del día</p>
 
                                                 <div class="text-muted">
-                                                    <p class="mb-1"><i
-                                                            class="mdi mdi-circle-medium align-middle text-primary mr-1"></i>
-                                                        If several languages coalesce</p>
-                                                    <p class="mb-1"><i
-                                                            class="mdi mdi-circle-medium align-middle text-primary mr-1"></i>
-                                                        Sed ut perspiciatis unde</p>
-                                                    <p class="mb-0"><i
-                                                            class="mdi mdi-circle-medium align-middle text-primary mr-1"></i>
-                                                        It would be necessary</p>
+                                                    <p class="mb-1">
+                                                            La violencia contra la mujer no solo es un delito, es una violación de los derechos humanos. <br/> ¡Di no a la violencia y sí a la igualdad y el respeto!</p>
+                                                   
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-3 col-sm-4 align-self-center">
                                             <div>
-                                                <img src="assets\images\crypto\features-img\img-1.png" alt=""
-                                                    class="img-fluid d-block">
+                                                <img src="assets\images\users\avatar-7.png" alt=""
+                                                    class="img-fluid d-block pr-5">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <p class="text-muted mb-4"><i
-                                                    class="mdi mdi-bitcoin h2 text-warning align-middle mb-0 mr-3"></i>
-                                                Bitcoin </p>
-
-                                            <div class="row">
-                                                <div class="col-6">
-                                                    <div>
-                                                        <h5>$ 9134.39</h5>
-                                                        <p class="text-muted text-truncate mb-0">+ 0.0012 ( 0.2 % ) <i
-                                                                class="mdi mdi-arrow-up ml-1 text-success"></i></p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <div>
-                                                        <div id="area-sparkline-chart-1" class="apex-charts"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <p class="text-muted mb-4"><i
-                                                    class="mdi mdi-ethereum h2 text-primary align-middle mb-0 mr-3"></i>
-                                                Ethereum </p>
-
-                                            <div class="row">
-                                                <div class="col-6">
-                                                    <div>
-                                                        <h5>$ 245.44</h5>
-                                                        <p class="text-muted text-truncate mb-0">- 4.102 ( 0.1 % ) <i
-                                                                class="mdi mdi-arrow-down ml-1 text-danger"></i></p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <div>
-                                                        <div id="area-sparkline-chart-2" class="apex-charts"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <p class="text-muted mb-4"><i
-                                                    class="mdi mdi-litecoin h2 text-info align-middle mb-0 mr-3"></i>
-                                                litecoin </p>
-
-                                            <div class="row">
-                                                <div class="col-6">
-                                                    <div>
-                                                        <h5>$ 63.61</h5>
-                                                        <p class="text-muted text-truncate mb-0">+ 1.792 ( 0.1 % ) <i
-                                                                class="mdi mdi-arrow-up ml-1 text-success"></i></p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <div>
-                                                        <div id="area-sparkline-chart-3" class="apex-charts"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            
 
                         </div>
                     </div>
@@ -443,13 +300,8 @@
             <footer class="footer">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-sm-6">
-                            <script>document.write(new Date().getFullYear())</script> © Skote.
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="text-sm-right d-none d-sm-block">
-                                Design & Develop by Themesbrand
-                            </div>
+                        <div class="col-sm-12 ">
+                            <script>document.write(new Date().getFullYear())</script> © Desarrollado por Code-five.
                         </div>
                     </div>
                 </div>
@@ -526,6 +378,18 @@
 
     <script src="assets\js\app.js"></script>
 
+    <script>
+        $(document).ready(function() {
+            $('#vertical-menu-btn').click(function() {
+                var logoText = $('#logo-text');
+                if (logoText.text() === 'Premu') {
+                    logoText.text('P');
+                } else {
+                    logoText.text('Premu');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
