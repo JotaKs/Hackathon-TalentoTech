@@ -30,3 +30,5 @@ Wilson Fernando Andrade Madroñero - Pasto
 [Frontend ](https://github.com/JotaKs/Hackathon-TalentoTech)
 
 [Backend ](https://github.com/Juanse1108/premu_be)
+
+[Modelo Machine Learning](https://colab.research.google.com/drive/1ylokJ8ukqEEmaalNm43NVGUEiYBOCvc_?usp=sharing)
