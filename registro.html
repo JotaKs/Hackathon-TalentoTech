@@ -163,16 +163,10 @@
                 const formData = {
                     email: $('#correo').val(),
                     password: $('#password').val(),
+                    confirmPassword: $('#password').val(),
                     firstName: $('#nombres').val(),
                     lastName: $('#apellidos').val(),
-                    identification: '123123',
-                    idType: '1', // Ajusta según tus necesidades
-                    department: 'unknown', // Ajusta según tus necesidades
-                    city: 'unknown', // Ajusta según tus necesidades
-                    address: 'unknown', // Ajusta según tus necesidades
                     phone: $('#celular').val(),
-                    comments: 'No comments', // Ajusta según tus necesidades
-                    incidentDate: new Date().toISOString() // Ajusta según tus necesidades
                 };
 
                 $.ajax({
