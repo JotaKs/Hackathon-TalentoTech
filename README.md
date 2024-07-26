@@ -2,7 +2,7 @@
 
 ## Descripción
 
-**Premu** es una aplicación web diseñada para abordar y prevenir la violencia contra las mujeres en nuestras comunidades. Esta innovadora plataforma centraliza diversas funciones clave para mejorar la seguridad y el bienestar de las mujeres en entornos locales, facilitando la visualización y el análisis de esta información
+**Premu** es una aplicación web diseñada para abordar y prevenir la violencia contra las mujeres en nuestras comunidades. Esta plataforma centraliza diversas funciones clave para mejorar la seguridad y el bienestar de las mujeres en entornos locales, facilitando la visualización y el análisis de esta información
 
 ## Tecnologías Utilizadas
 
